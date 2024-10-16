@@ -38,7 +38,7 @@ const CTypeSlider = ({ viewAll }) => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get('https://kidgage-backend.onrender.com/api/course-category/categories');
+        const response = await axios.get('https://kidgage-marketplace-backend.onrender.com/api/course-category/categories');
         const fetchedCategories = response.data;
         setCategories(fetchedCategories);
   
@@ -46,7 +46,7 @@ const CTypeSlider = ({ viewAll }) => {
         const fees = {};
         await Promise.all(fetchedCategories.map(async (category) => {
           try {
-            const feeResponse = await axios.get(`https://kidgage-backend.onrender.com/api/courses/lowest-fee/${category.name}`);
+            const feeResponse = await axios.get(`https://kidgage-marketplace-backend.onrender.com/api/courses/lowest-fee/${category.name}`);
             const minFee = feeResponse.data.minFee;
   
             // If minFee is available, set it; otherwise, set it to 'NA'

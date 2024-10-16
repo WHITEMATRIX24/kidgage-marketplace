@@ -17,7 +17,7 @@ const TopProviders = () => {
     // Fetch the providers from the backend
     const fetchProviders = async () => {
       try {
-        const response = await axios.get('https://kidgage-backend.onrender.com/api/users/all'); // Adjust the endpoint if necessary
+        const response = await axios.get('https://kidgage-marketplace-backend.onrender.com/api/users/all'); // Adjust the endpoint if necessary
         setProviders(response.data);
         setLoading(false);
 

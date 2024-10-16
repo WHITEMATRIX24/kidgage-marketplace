@@ -78,7 +78,7 @@ const BusinessSignUp = () => {
     });
 
     try {
-        const response = await axios.post('https://kidgage-backend.onrender.com/api/users/signup', data);
+        const response = await axios.post('https://kidgage-marketplace-backend.onrender.com/api/users/signup', data);
         setSuccess('Successfully sumitted for verification!');
         setFormData({ ...initialFormState }); // Reset form fields
     } catch (error) {

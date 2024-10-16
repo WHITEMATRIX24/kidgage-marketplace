@@ -22,7 +22,7 @@ const ProviderInfo = () => {
     // Fetch courses by providerId
     useEffect(() => {
         if (provider && provider._id) {
-            axios.get('https://kidgage-backend.onrender.com/api/courses/by-providers', {
+            axios.get('https://kidgage-marketplace-backend.onrender.com/api/courses/by-providers', {
                 params: {
                     providerIds: [provider._id] // Sending providerId in query
                 }
