@@ -171,9 +171,7 @@
         font-size: 2rem;
     }
 
-    .activity-info-image {
-        max-width: 750px;
-    }
+
 
     .activity-info-description {
         margin-top: 20px;
@@ -223,6 +221,7 @@
 
     .activity-info-image {
         max-width: 750px;
+        min-height: 400px;
     }
 
     .activity-info-description {
@@ -259,7 +258,24 @@
         margin-top: 30px;
     }
 }
-
+@media (min-width:1500px) {
+    .activity-info-image {
+        max-width: 750px;
+        min-height: 500px;
+    }
+}
+@media (min-width:1750px) {
+    .activity-info-image {
+        max-width: 750px;
+        min-height: 550px;
+    }
+}
+@media (min-width:2000px) {
+    .activity-info-image {
+        max-width: 750px;
+        min-height: 600px;
+    }
+}
 @media (min-width: 2500px) {
     .activity-info-content {
         min-width: 2000px;
@@ -271,7 +287,7 @@
 
     .activity-info-image {
         max-width: 1200px;
-        max-height: 60%;
+        min-height: 35vw;
 
     }
 
@@ -336,8 +352,8 @@
 
     .activity-info-image {
         max-width: 750px;
-        max-height: 40%;
-        height: 50vw;
+        max-height: 50%;
+        height: 65vw;
     }
 
     .provider-trainer-container {

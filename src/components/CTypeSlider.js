@@ -117,7 +117,7 @@ const CTypeSlider = ({ viewAll }) => {
       <h2 className="slider-title">Top Activities</h2>
       <p className="slider-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa lacus.</p>
       {loading ? (
-        <div className="loading-dots">
+        <div className="loading-dots1">
         <span></span>
         <span></span>
         <span></span>
