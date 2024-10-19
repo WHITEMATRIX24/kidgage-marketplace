@@ -22,7 +22,7 @@ const ProviderInfo = () => {
     // Fetch courses by providerId
     useEffect(() => {
         if (provider && provider._id) {
-            axios.get('https://kidgage-marketplace-backend.onrender.com/api/courses/by-providers', {
+            axios.get('https://kidgage-backend.onrender.com/api/courses/by-providers', {
                 params: {
                     providerIds: [provider._id] // Sending providerId in query
                 }
@@ -327,8 +327,8 @@ const ProviderInfo = () => {
                                 className="pro-logoimage" 
                             />
                         </div>
-                        <div style={{display:'flex', flexDirection:'row', marginTop:'10px'}}>
-                        <img src={verified} style={{height:'20px', width:'auto', marginRight:'5px'}}></img><p style={{fontWeight:'bold',color:'darkblue'}}>Verified by Kidgage</p>
+                        <div className='verified-div' style={{display:'flex', flexDirection:'row', marginTop:'10px'}}>
+                            <img src={verified} style={{height:'20px', width:'auto', marginRight:'5px'}}></img><p style={{fontWeight:'bold',color:'darkblue'}}>Verified by Kidgage</p>
                         </div>
                         <div>
                         </div>

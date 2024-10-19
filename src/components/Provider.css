@@ -10,9 +10,18 @@
     border-radius: 8px;
     margin-bottom: 15px;
     object-fit: cover;
-    max-height: 30vw;
+    max-height: 400px;
 }
-
+@media (min-width:1500px) {
+    .pro-image img{
+        max-height: 500px;
+    }
+}
+@media (min-width:2500px) {
+    .pro-image img{
+        max-height: 900px;
+    }
+}
 .total-contain{
     display: flex;
     flex-direction: row;
@@ -22,7 +31,8 @@
     max-width: 120px;
     max-height: 120px;
     object-fit: cover;
-    margin-top: 10px;
+    margin-top: 3%;
+    margin-left: 3%;
 }
 
 .logo-contain{
@@ -233,4 +243,22 @@
     color: #fff;
     border-radius: 20px;
     border: none;
+}
+@media (min-width:2500px) {
+    .pro-logoimage{
+    max-width: 150px;
+    max-height: 150px;
+    }
+    .logo-contain p{
+        font-size: 20px;
+    }
+    .logo-contain h1{
+        font-size: 32px;
+    }
+    .verified-div img{
+        height: 30px !important;
+    }
+    .verified-div p{
+        font-size: 22px;
+    }
 }
